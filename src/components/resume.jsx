@@ -1,29 +1,43 @@
-import React, { useRef } from "react";
+import React, { useContext, useEffect, useRef } from "react";
 
 import html2canvas from 'html2canvas';
 import { jsPDF } from 'jspdf';
 
+import { UserContext } from "../contexts/User.context";
 import Templates from "./templates";
 import "../css/main.css";
 
 export default function Resume(props) { 
+
+    const { userModel } = useContext(UserContext);
     const resumeRef = useRef(null);
+
+    //Desctrure UserModel
+    const { personal, contact, skills, work, education, certification} = userModel;
     
+    //Destructure personal object
+    const {  firstname, lastname, jobposition, objective } = personal;
+    
+    //Destructure contact Object
+    const {  email, phonenumber, address, url } = contact;
+    
+
     const handleDownloadPdf = async () => {
         const element = resumeRef.current;
         const canvas = await html2canvas(element);
         const data = canvas.toDataURL('image/png');
-
-        console.log(data,canvas, element)
     
         const pdf = new jsPDF();
         const imgProperties = pdf.getImageProperties(data);
         const pdfWidth = pdf.internal.pageSize.getWidth();
         const pdfHeight = (imgProperties.height * pdfWidth) / imgProperties.width;
+
+        console.log(userModel);
     
         pdf.addImage(data, 'PNG', 0, 0, pdfWidth, pdfHeight);
         pdf.save('print.pdf');
     };
+
 
     return (
         <React.Fragment>
@@ -45,9 +59,9 @@ export default function Resume(props) {
                                         <img src="./src/i.png" alt="" width="80"/>
                                     </div>
                                     <div className="h_objectif">
-                                        <h1 className="t-white">Gracias Kasongo</h1>
-                                        <h3 className="t-white">Informaticien, développeur  web.</h3>
-                                        <p className="t-white">Aptitude á développer et á concevoir des logiciels dans des délais contraints. Expérimenté dans le developement de logiciel, l'analyse des besoins du client et le débogage de programmes. Grande curiosité intellectuelle et capacité d'adaptation aux nouvelles évolutions informatiques.</p>
+                                        <h1 className="t-white">{firstname} {lastname}</h1>
+                                        <h3 className="t-white">{jobposition}</h3>
+                                        <p className="t-white">{objective}</p>
                                     </div>
                                 </div>
                             </div>

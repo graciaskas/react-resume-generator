@@ -88,12 +88,12 @@ button {
     border-left: 3px solid var(--red);
 }
 .template{
-    width: 195px !important;
+    width: 210px !important;
     border-radius: 0.5rem;
     overflow: hidden;
     height: 220px;
-    gap: 15px;
-    border: 2px solid #dfdfdf;
+    border: 1px solid #dfdfdf;
+    box-shadow: 0 0 3px #efefef;
     display: inline-block !important;
     cursor: pointer;
     outline: none !important;
