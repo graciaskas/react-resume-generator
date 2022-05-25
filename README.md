@@ -11,6 +11,9 @@ It also allows you to have a reduced time of the revision of your CV.
 ## Used technologies
 * jspdf
 * jspdf-autotable
+* react-slick
+* slick-carousel
+* html2canvas
 
 ### `npm start`
 
