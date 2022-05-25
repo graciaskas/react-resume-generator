@@ -15,6 +15,7 @@ textarea {
 }
 button { 
     outline: none !important;
+    overflow: hidden;
 }
 
 .button { 
@@ -87,7 +88,7 @@ button {
     border-left: 3px solid var(--red);
 }
 .template{
-    width: 185px !important;
+    width: 195px !important;
     border-radius: 0.5rem;
     overflow: hidden;
     height: 220px;
@@ -95,6 +96,7 @@ button {
     border: 2px solid #dfdfdf;
     display: inline-block !important;
     cursor: pointer;
+    outline: none !important;
 } 
 .template img{
     width: 100%;

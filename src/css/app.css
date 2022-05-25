@@ -39,13 +39,14 @@
     display: block;
     width: 100%;
     border-radius: 0.5rem;
-    box-shadow: 0 0 5px #efefef;
+    border: 1px solid #dfdfdf;
     overflow: hidden;
 } 
 
 .resume-templates { 
     position: relative;
     overflow: hidden;
+    margin-bottom: 0.5rem;
 }
 .slider_buttons { 
     display: block;
@@ -69,3 +70,9 @@
     background-color: var(--blue) !important;
     cursor: pointer;
 } 
+
+.downloads { 
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}

@@ -26,7 +26,7 @@ p,li {
 }
 
 span {
-    background-color: var(--red) !important;
+    background-color: var(--red) ;
     color: var(--white) !important;
     margin-right: 3px;
     font-size: 0.65rem !important;
