@@ -1,10 +1,16 @@
-# Getting Started with Create React App
+# Getting Started with React Resume Generator App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## About the app
 
-In the project directory, you can run:
+This project is  open-source, you can modify it and redistribute it.
+It aims to help you get an idea of how you work on a project like this.
+It also allows you to have a reduced time of the revision of your CV.
+
+## Used technologies
+* jspdf
+* jspdf-autotable
 
 ### `npm start`
 
