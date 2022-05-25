@@ -13,6 +13,9 @@ form {
 textarea { 
     resize: none;
 }
+button { 
+    outline: none !important;
+}
 
 .button { 
     padding: 0.7rem 1.5rem;
@@ -25,9 +28,15 @@ textarea {
 .b-none { 
     background-color: transparent !important;
 }
+.t-blue { 
+    color: var(--blue) !important;
+}
 .b-blue { 
     background-color: var(--blue) !important;
     color: var(--white) !important;
+}
+.t-red { 
+    color: var(--red) !important;
 }
 .b-red { 
     background-color: var(--red) !important;
@@ -76,4 +85,18 @@ textarea {
  } 
 .line.active { 
     border-left: 3px solid var(--red);
+}
+.template{
+    width: 185px !important;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    height: 220px;
+    gap: 15px;
+    border: 2px solid #dfdfdf;
+    display: inline-block !important;
+    cursor: pointer;
+} 
+.template img{
+    width: 100%;
+    height: 100%;
 }
