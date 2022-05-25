@@ -62,10 +62,10 @@ export default function Templates (props) {
                     <img src="https://www.theladders.com/wp-content/uploads/znx9yd6didn5eqz5np5g-724x1024.png" alt="an images" />
                 </div>
                 <div className="template">
-                    <img src="https://www.theladders.com/wp-content/uploads/znx9yd6didn5eqz5np5g-724x1024.png" alt="an images" />
+                    <img src="https://resumegenius.com/wp-content/uploads/2022-Modern-Resume-Template-Red.png" alt="an images" />
                 </div>
                 <div className="template">
-                    <img src="https://www.theladders.com/wp-content/uploads/znx9yd6didn5eqz5np5g-724x1024.png" alt="an images" />
+                    <img src="https://cdn.seeklearning.com.au/media/images/career-guide/article/resume/preview-resume-template-1.jpg" alt="an images" />
                 </div>
             </Slider>
             <div className="slider_buttons">
