@@ -9,14 +9,26 @@
 
 /** 1 Resume Form **/
 .appForm { 
-    width: 40%;
-    padding: 1rem 2rem;
+    width: 38%;
+    padding: 1rem 1.5rem;
     background-color: #efefef;
+    overflow-y: scroll;
 }
+
+.appForm::-webkit-scrollbar {
+    width: 5px;
+ }
+ .appForm::-webkit-scrollbar-thumb {
+    width: 6px;
+    background-color: #aaa;
+    border-radius: 5px;
+ }
+
+
 
 /** 2 Resume Canvas **/
 .appResume { 
-    width: 60%;
+    width: 72%;
     padding: 1rem 2rem;
     overflow-y: scroll;
     height: 100% !important;

@@ -33,9 +33,7 @@ export default function Resume(props) {
                             <h3 class="t-danger">CONTACT</h3>
                             <p><span class="fa fa-envelope"></span> graciaskas96@gmail.com </p>
                             <p><span class="fa fa-phone"></span> (243) 978 092 058 </p>
-                            <p><span class="fa fa-map-marker"></span> Av.mont Thabor N.48 Q.Haut commandement,C. Gombe </p>
-                            <p>Nationalité: Congolaise</p>
-                            <p>Né à: Kindu - Maniema, RD Congo.</p>
+                            <p><span class="fa fa-map-marker"></span>N.48, Gombe - Kin </p>
                         </div>
                         <div class="left_block">
                             <h3 class="t-danger upper">Compétences</h3>
