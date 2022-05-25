@@ -1,0 +1,123 @@
+@import "./frame.css";
+ 
+*, *::after, *::before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Lato', sans-serif;
+    line-height: 1.5rem;
+}
+
+h1, h2, h3, h4, h5,h6 {
+    font-family: "Raleway" !important;
+}
+
+h3 {
+    margin: 0.45em 0;
+}
+
+p,li {
+    font-size: 0.85rem;
+}
+
+span {
+    background-color: var(--red) !important;
+    color: var(--white) !important;
+    margin-right: 3px;
+    font-size: 0.65rem !important;
+    padding: 3px;
+    border-radius: 100%;
+    height: 18px;
+    width: 18px;
+    text-align: center;
+    margin-top: 3px;
+}
+
+header {
+    background: rgb(200, 20, 20);
+    padding: 18px 0;
+}
+main {
+    height: 80vh;
+}
+.container {
+    padding: 0px 15px;
+}
+.row {
+    display: flex;
+}
+
+.t-danger {
+    color: rgb(200, 20, 20) !important; 
+}
+.t-white {
+    color: white !important;
+}
+.t-dark {
+    color: #777 !important;
+}
+.upper {
+    text-transform: uppercase;
+}
+.left_side .h_objectif {
+    margin-left: 1rem;
+}
+
+.left_block {
+    margin-bottom: 2.2rem;
+}
+.left_block p {
+    display: flex;
+    align-items: flex-start;
+}
+.left_block h3{
+    margin-bottom: 1.5rem;
+}
+.smaller {
+    font-size: 0.78rem !important;
+}
+/** main **/
+.side_left {
+    width: 32%;
+    border-right: 1px solid rgb(20, 20, 20,0.1);
+    padding-right: 3px;
+}
+
+
+.right_side {
+    padding-left: 1rem;
+}
+.right_side .work {
+    margin-bottom: 1rem;
+}
+
+.right_side .work h4 {
+    /* margin: 0.2rem 0; */
+    color: rgb(200, 20, 20);
+}
+.right_side  h3 {
+    margin-bottom: 1.3rem;
+    border-bottom: 2px solid rgb(200, 20, 20) !important;
+    display: block;
+    padding-bottom: 2px;
+}
+.right_side  ul {
+    margin-left: 2rem;
+}
+@media print {
+    html, body {
+        width: 210mm;
+        height: 297mm;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+    .container {
+        padding: 0.75rem 0.40in;
+    }
+ }

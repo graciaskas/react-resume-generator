@@ -1,0 +1,31 @@
+@import "./frame.css";
+
+.App { 
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/** 1 Resume Form **/
+.appForm { 
+    width: 40%;
+    padding: 1rem 2rem;
+    background-color: #efefef;
+}
+
+/** 2 Resume Canvas **/
+.appResume { 
+    width: 60%;
+    padding: 1rem 2rem;
+    overflow-y: scroll;
+    height: 100% !important;
+}
+
+.appResume .resume{
+    display: block;
+    width: 100%;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 5px #efefef;
+    overflow: hidden;
+} 
