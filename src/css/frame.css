@@ -88,7 +88,7 @@ button {
     border-left: 3px solid var(--red);
 }
 .template{
-    width: 210px !important;
+    width: 195px !important;
     border-radius: 0.5rem;
     overflow: hidden;
     height: 220px;

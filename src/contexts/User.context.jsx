@@ -3,12 +3,9 @@ import User from "../data/user";
 
 export const UserContext = React.createContext(null);
 
-const reducer = (state, action) => { 
-    console.log(state, action);
-};
 
 export default function Provider({  children }) { 
-
+    //User model states
     const [userModel, setUserModel] = useState(User);
     //function to handle input change...
     const handleChange = (event) => { 
@@ -23,6 +20,7 @@ export default function Provider({  children }) {
         }
     };
 
+    //Context values to share
     const values = { 
         userModel,
         handleChange
@@ -30,13 +28,18 @@ export default function Provider({  children }) {
 
     //When component is mounted
     useEffect(() => { 
+        //Get localStorage data
         const localStorageData = JSON.parse(localStorage.getItem("userModel")) || null;
         if(localStorageData) { 
-            setUserModel(localStorageData);
+            setUserModel(localStorageData); //Set it to actual user model state
+        }else{
+            localStorage.setItem("userModel", JSON.stringify(userModel));
         }
     },[]);
 
-    return <UserContext.Provider value={values}>
-        { children}
-    </UserContext.Provider>
+    return (
+        <UserContext.Provider value={values}>
+            { children}
+        </UserContext.Provider>
+    )
 }

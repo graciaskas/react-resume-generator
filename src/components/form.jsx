@@ -55,13 +55,27 @@ export default function Form() {
                 <div className="section sec-contact">
                     <h4>Contact information</h4>
                     <div className="form-group">
-                        <input placeholder="Email address" className="input" name="email" datatype="contact" onChange={handleChange} />
-                        <input placeholder="Phone number" className="input" name="phonenumber" datatype="contact" onChange={handleChange} />
+                        <input 
+                            placeholder="Email address" className="input" name="email" 
+                            datatype="contact" onChange={handleChange} 
+                            defaultValue={email}
+                        />
+                        <input 
+                            placeholder="Phone number" className="input" name="phonenumber" 
+                            datatype="contact" onChange={handleChange} 
+                            defaultValue={phonenumber}
+                        />
                     </div>
-                    <input placeholder="Current Address" className="input" name="address" datatype="contact" onChange={handleChange}/>
+                    <input 
+                        placeholder="Current Address" className="input" name="address" 
+                        datatype="contact" onChange={handleChange}
+                        defaultValue={address}
+                    />
                     <input 
                         placeholder="Website / github / Codepen / LinkedIn / " 
-                        className="input" name="url" datatype="contact" onChange={handleChange}/>
+                        className="input" name="url" datatype="contact" onChange={handleChange}
+                        defaultValue={url}
+                    />
                 </div>
 
 

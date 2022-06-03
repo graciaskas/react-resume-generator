@@ -77,12 +77,12 @@ export default function Resume(props) {
                             <div className="side_left">
                                 <div className="left_block">
                                     <h3 className="t-danger">CONTACT</h3>
-                                    <p><span className="fa fa-envelope"></span> graciaskas96@gmail.com </p>
-                                    <p><span className="fa fa-phone"></span> (243) 978 092 058 </p>
-                                    <p><span className="fa fa-map-marker"></span>N.48, Gombe - Kin </p>
+                                    <p><span className="fa fa-envelope"></span>{email}</p>
+                                    <p><span className="fa fa-phone"></span>{phonenumber}</p>
+                                    <p><span className="fa fa-map-marker"></span>{address}</p>
                                 </div>
                                 <div className="left_block">
-                                    <h3 className="t-danger upper">Compétences</h3>
+                                    <h3 className="t-danger upper">Skills</h3>
                                     <p>HTML/XML</p>
                                     <p>CSS/SASS/LESS</p>
                                     <p>Javascript(Node, React,Next)</p>
@@ -111,7 +111,7 @@ export default function Resume(props) {
                             <div className="right_side">
                         
                                 <div className="works">
-                                    <h3 className="upper t-danger">Expériences</h3>
+                                    <h3 className="upper t-danger">WORK HISTORY</h3>
                                     <div className="work">
                                         <h5 className="upper">Linda Hotel, Goma - RD Congo.</h5>
                                         <h4> Développeur odoo</h4>
@@ -133,7 +133,7 @@ export default function Resume(props) {
                                 </div>
                         
                                 <div className="works">
-                                    <h3 className="upper t-danger">éducation</h3>
+                                    <h3 className="upper t-danger">Education</h3>
                                     <div className="work">
                                         <h5 className="upper">U.L.K | Gisenyi, Rwanda.</h5>
                                         <h4> BS: Computer Science</h4>
